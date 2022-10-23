@@ -1,0 +1,30 @@
+$darkBackground: #1a191a;
+$darkerBackground: #161616;
+$lightGray: #bdbdbd;
+$textColor: #fff;
+
+@font-face {
+  font-family: "American Captain";
+  src: url("../fonts/American\ Captain.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF-Pro-Display-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF-Pro-Display-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF-Pro-Display-Semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SF-Pro-Display-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
