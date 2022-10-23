@@ -1,6 +1,7 @@
 @import "variables";
 @import "heroSection";
 @import "topbar";
+@import "aboutSection";
 
 body {
   min-height: 100vh;
@@ -25,6 +26,12 @@ body {
 
 .heading3 {
   font-size: 110px;
+}
+
+.paragraph-small {
+  font-weight: 400;
+  font-size: clamp(1.125rem, calc(0.9894rem + 0.5106vw), 1.5rem);
+  line-height: 1.2;
 }
 
 .outlined-button {

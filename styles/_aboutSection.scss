@@ -1,0 +1,45 @@
+.about-container {
+  background-color: $darkerBackground;
+  padding: 3.75rem $horizontalPadding;
+  position: relative;
+  overflow: hidden;
+
+  .heading {
+    margin-bottom: 5.5rem;
+  }
+
+  .row {
+    row-gap: 4rem;
+  }
+
+  .about-text-container {
+    padding-right: 4.6%;
+    z-index: 2;
+  }
+
+  img {
+    z-index: 2;
+  }
+
+  .ghost-text {
+    font-weight: 700;
+    font-size: clamp(5rem, calc(3.2692rem + 7.6923vw), 12.5rem);
+    line-height: 1;
+    color: $ghostTextColor;
+    text-transform: lowercase;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(5%, 40%);
+    z-index: 1;
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-container {
+    .about-text-container {
+      padding-right: 0;
+    }
+  }
+}

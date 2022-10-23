@@ -5,8 +5,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% center;
-  padding-inline: 5%;
-  padding-top: clamp(100px, 8%, 200px);
+  padding-inline: $horizontalPadding;
+  padding-top: clamp(110px, 8%, 200px);
   padding-bottom: 1rem;
 }
 
