@@ -306,18 +306,12 @@
 }
 
 #about .ghost-text {
-  font-weight: 700;
   font-size: clamp(5rem, calc(3.2692rem + 7.6923vw), 12.5rem);
-  line-height: 1;
-  color: #373737;
-  text-transform: lowercase;
-  position: absolute;
   bottom: 0;
   right: 0;
   -webkit-transform: translate(5%, 40%);
           transform: translate(5%, 40%);
   z-index: 1;
-  opacity: 0.3;
 }
 
 @media screen and (max-width: 992px) {
@@ -626,6 +620,118 @@
   }
 }
 
+#contact {
+  background-color: #161616;
+  padding: 7rem 5%;
+  position: relative;
+}
+
+#contact .ghost-text {
+  top: 0;
+  left: 0;
+  font-size: clamp(4.375rem, calc(1.8365rem + 11.2821vw), 15.375rem);
+  z-index: 0;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+#contact .contact-header,
+#contact .contact-description,
+#contact .contact-form {
+  z-index: 1;
+}
+
+#contact .contact-description {
+  font-weight: 400;
+  font-size: clamp(1.5rem, calc(1.375rem + 0.5556vw), 1.875rem);
+  line-height: 1.65;
+}
+
+#contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contact .contact-form .inputs-row {
+  width: 100%;
+  gap: 1.25rem;
+}
+
+#contact .contact-form input,
+#contact .contact-form select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #f2f2f2;
+  width: 50%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2.5;
+}
+
+#contact .contact-form input::-webkit-input-placeholder,
+#contact .contact-form select::-webkit-input-placeholder {
+  color: #f2f2f2;
+}
+
+#contact .contact-form input:-ms-input-placeholder,
+#contact .contact-form select:-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+#contact .contact-form input::-ms-input-placeholder,
+#contact .contact-form select::-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+#contact .contact-form input::placeholder,
+#contact .contact-form select::placeholder {
+  color: #f2f2f2;
+}
+
+#contact .contact-form select {
+  cursor: pointer;
+}
+
+#contact .contact-form select option {
+  background-color: #222222;
+}
+
+#contact .contact-form .outlined-button {
+  width: 30%;
+}
+
+@media screen and (max-width: 991px) {
+  #contact .ghost-text {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #contact .contact-form .outlined-button {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #contact {
+    padding-block: 5rem;
+  }
+  #contact .contact-form .outlined-button {
+    width: 100%;
+  }
+}
+
 body {
   min-height: 100vh;
   font-family: "SF Pro Display", sans-serif;
@@ -648,7 +754,7 @@ img {
 }
 
 .heading2 {
-  font-size: 120px;
+  font-size: clamp(4.375rem, calc(3.3333rem + 4.6296vw), 7.5rem);
 }
 
 .heading3 {
@@ -675,6 +781,15 @@ img {
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.75rem;
+}
+
+.ghost-text {
+  font-weight: 700;
+  line-height: 1.2;
+  color: #373737;
+  text-transform: lowercase;
+  position: absolute;
+  opacity: 0.3;
 }
 
 .display-desktop {
