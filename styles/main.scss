@@ -3,6 +3,7 @@
 @import "topbar";
 @import "aboutSection";
 @import "benefitsSection";
+@import "carsSection";
 
 body {
   min-height: 100vh;
@@ -15,6 +16,10 @@ body {
   font-weight: 400;
   color: $textColor;
   line-height: 1;
+}
+
+img {
+  max-width: 100%;
 }
 
 .heading1 {
