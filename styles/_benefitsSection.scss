@@ -1,0 +1,125 @@
+#benefits {
+  padding: 5.625rem $horizontalPadding 7.125rem;
+  background-color: $darkBackground;
+  position: relative;
+  overflow: hidden;
+
+  .decoration-lines {
+    position: absolute;
+  }
+
+  .decoration-lines.top {
+    top: 0;
+    left: 0;
+    transform: translate(-20%, 0);
+  }
+
+  .decoration-lines.bottom {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg) translate(0%, -20%);
+  }
+
+  .heading {
+    margin-bottom: 2.5rem;
+    z-index: 1;
+  }
+
+  .benefits-container {
+    margin-top: 10rem;
+    column-gap: clamp(2rem, calc(-9.4rem + 12vw), 5rem);
+    row-gap: 7rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 430px);
+  }
+
+  .benefit-card {
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    padding-block: Min(45%, 220px) 2.25rem;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+
+    &.green {
+      background: rgba(0, 221, 168, 0.5);
+    }
+
+    &.red {
+      background: rgba(207, 41, 41, 0.6);
+    }
+
+    &.blue {
+      background: rgba(0, 88, 221, 0.6);
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform-origin: center;
+      transform: translate(-50%, -35%);
+      max-width: 65%;
+    }
+
+    .benefit-title {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: capitalize;
+      color: $textColor;
+    }
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  #benefits {
+    .benefits-container {
+      column-gap: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #benefits {
+    .benefits-container {
+      justify-items: center;
+    }
+
+    .benefit-card {
+      max-width: 430px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #benefits {
+    .benefits-container {
+      margin-top: 7rem;
+    }
+    .decoration-lines.top {
+      transform: translate(-30%, -20%);
+    }
+
+    .decoration-lines.bottom {
+      transform: rotate(180deg) translate(-25%, -30%);
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #benefits {
+    padding-block: 4rem 6rem;
+
+    .benefits-container {
+      grid-template-columns: Min(100%, 380px);
+    }
+
+    .benefit-card img {
+      max-width: 55%;
+    }
+  }
+}

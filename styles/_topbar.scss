@@ -38,7 +38,7 @@
 
     li {
       font-weight: 600;
-      font-size: 1.5rem;
+      font-size: 1em;
       line-height: 1.2;
     }
   }
@@ -83,16 +83,20 @@
 
 /*Media Queries */
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .topbar .outlined-button {
+    padding-inline: 1.25rem;
+    font-size: 1.25rem;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .topbar {
-    padding: 1.5rem 3%;
+    padding-block: 1.5rem;
 
     ul {
       gap: 1.25rem;
-    }
-
-    .outlined-button {
-      padding-inline: 1.25rem;
+      font-size: 1.25rem;
     }
   }
 }

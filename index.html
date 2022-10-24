@@ -13,30 +13,32 @@
     <title>Prime Car</title>
   </head>
   <body>
-    <section class="hero-container">
+    <section id="hero">
       <div class="topbar fixed-top">
-        <a href="#" class="logo display-mobile navbar-brand heading"
+        <a href="#hero" class="logo display-mobile navbar-brand heading"
           >PRIME CAR</a
         >
         <nav>
-          <a href="#" class="logo display-desktop navbar-brand heading"
+          <a href="#hero" class="logo display-desktop navbar-brand heading"
             >PRIME CAR</a
           >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
+              <a href="#hero" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"> About </a>
+              <a href="#about" class="nav-link"> About </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"> Benefits </a>
+              <a href="#benefits" class="nav-link"> Benefits </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link"> Cars </a>
             </li>
           </ul>
-          <buton class="outlined-button">Contact Us</buton>
+          <a href="#" class="nav-link"
+            ><buton class="outlined-button">Contact Us</buton></a
+          >
         </nav>
 
         <div class="hamburger-menu d-md-none d-lg-none d-xl-none d-xxl-none">
@@ -70,7 +72,7 @@
         </div>
       </div>
     </section>
-    <section class="about-container">
+    <section id="about">
       <h2 class="heading heading1 text-center">About Us</h2>
       <div class="row align-items-center flex-column-reverse flex-lg-row">
         <div class="about-text-container col-lg-6 col-12">
@@ -100,6 +102,63 @@
       </div>
 
       <p class="ghost-text">About Us</p>
+    </section>
+    <section id="benefits" class="d-flex flex-column align-items-center">
+      <img
+        class="decoration-lines top"
+        src="images/benefits-lines.png"
+        alt="decoration lines"
+      />
+      <h2 class="heading heading3 text-center w-75">
+        All the benefits you will get when you shop with us
+      </h2>
+      <p class="paragraph-small text-center">
+        Take advantage of everything you can have now by buying your new car at
+        Prime Car
+      </p>
+      <div class="w-100 benefits-container">
+        <div
+          class="benefit-card green d-flex flex-column align-items-center justify-content-start"
+        >
+          <img src="images/benefit-map.png" alt="map" />
+          <p class="benefit-title">Several Headquarters</p>
+          <p class="paragraph-small text-center">
+            You can find several Prime Car stores around the United States!
+          </p>
+          <p class="paragraph-small text-center">
+            <a href="#">Find the store closest to you now</a>
+          </p>
+        </div>
+        <div
+          class="benefit-card red d-flex flex-column align-items-center justify-content-start"
+        >
+          <img src="images/benefit-calendar.png" alt="calendar" />
+          <p class="benefit-title">
+            Schedule Your<br />
+            Best Day
+          </p>
+          <p class="paragraph-small text-center">
+            Choose the day and time to take a test drive for free!
+          </p>
+        </div>
+        <div
+          class="benefit-card blue d-flex flex-column align-items-center justify-content-start"
+        >
+          <img src="images/benefit-keys.png" alt="keys" />
+          <p class="benefit-title">
+            Receive your car<br />
+            right away
+          </p>
+          <p class="paragraph-small text-center">
+            Close the contract and you get the keys right away
+          </p>
+        </div>
+      </div>
+      <img
+        class="decoration-lines bottom"
+        src="images/benefits-lines.png"
+        alt="decoration lines"
+      />
     </section>
 
     <section class="big"></section>

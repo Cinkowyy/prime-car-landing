@@ -17,3 +17,12 @@ const hamburgerIcon = document.querySelector(".hamburger-menu");
 hamburgerIcon.addEventListener("click", () => {
   navbar.classList.toggle("opened");
 });
+
+//closing menu when click link
+
+const links = navbar.querySelectorAll("nav a.nav-link");
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbar.classList.remove("opened");
+  });
+});

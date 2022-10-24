@@ -2,6 +2,7 @@
 @import "heroSection";
 @import "topbar";
 @import "aboutSection";
+@import "benefitsSection";
 
 body {
   min-height: 100vh;
@@ -25,13 +26,17 @@ body {
 }
 
 .heading3 {
-  font-size: 110px;
+  font-size: clamp(3.4375rem, calc(2.2917rem + 5.0926vw), 6.875rem);
 }
 
 .paragraph-small {
   font-weight: 400;
   font-size: clamp(1.125rem, calc(0.9894rem + 0.5106vw), 1.5rem);
   line-height: 1.2;
+
+  a {
+    color: inherit;
+  }
 }
 
 .outlined-button {

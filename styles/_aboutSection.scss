@@ -1,4 +1,4 @@
-.about-container {
+#about {
   background-color: $darkerBackground;
   padding: 3.75rem $horizontalPadding;
   position: relative;
@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .about-container {
+  #about {
     .about-text-container {
       padding-right: 0;
     }
