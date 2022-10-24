@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@include media-breakpoint-down(lg) {
   #benefits {
     .benefits-container {
       justify-items: center;
@@ -95,7 +95,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@include media-breakpoint-down(md) {
   #benefits {
     .benefits-container {
       margin-top: 6rem;
@@ -110,12 +110,12 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@include media-breakpoint-down(sm) {
   #benefits {
     padding-block: 4rem 6rem;
 
     .benefits-container {
-      grid-template-columns: Min(100%, 380px);
+      grid-template-columns: Min(90%, 380px);
       row-gap: 5.5rem;
     }
 

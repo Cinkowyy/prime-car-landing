@@ -31,3 +31,17 @@ $horizontalPadding: 5%;
   src: url("../fonts/SF-Pro-Display-Bold.ttf") format("truetype");
   font-weight: 700;
 }
+
+$breakpoints: (
+  sm: 575.98px,
+  md: 767.98px,
+  lg: 991.98px,
+  xl: 1199.98px,
+  xxl: 1399.98px,
+);
+
+@mixin media-breakpoint-down($breakpoint) {
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

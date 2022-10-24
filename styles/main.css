@@ -69,7 +69,13 @@
 }
 
 /*Media Queries */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 575.98px) {
+  .hero-content p {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
   .hero-content p {
     width: 60%;
   }
@@ -78,21 +84,15 @@
   }
 }
 
-@media screen and (max-width: 575px) {
-  .hero-content p {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 1399px) {
-  #hero {
-    min-height: 660px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   #hero {
     min-height: 620px;
+  }
+}
+
+@media screen and (max-width: 1399.98px) {
+  #hero {
+    min-height: 660px;
   }
 }
 
@@ -214,7 +214,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.98px) {
   .topbar {
     padding-block: 1.5rem;
   }
@@ -224,7 +224,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .topbar {
     padding-block: 1.25rem;
   }
@@ -314,7 +314,7 @@
   z-index: 1;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991.98px) {
   #about .about-text-container {
     padding-right: 0;
   }
@@ -414,7 +414,7 @@
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.98px) {
   #benefits .benefits-container {
     justify-items: center;
   }
@@ -423,7 +423,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   #benefits .benefits-container {
     margin-top: 6rem;
   }
@@ -437,13 +437,13 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 575.98px) {
   #benefits {
     padding-block: 4rem 6rem;
   }
   #benefits .benefits-container {
-    -ms-grid-columns: Min(100%, 380px);
-        grid-template-columns: Min(100%, 380px);
+    -ms-grid-columns: Min(90%, 380px);
+        grid-template-columns: Min(90%, 380px);
     row-gap: 5.5rem;
   }
   #benefits .benefit-card img {
@@ -519,7 +519,7 @@
   margin-bottom: 1.75rem;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.98px) {
   #cars .cars-row .car-details .car-description {
     margin-bottom: 0.75rem;
   }
@@ -572,7 +572,27 @@
           transform: translateY(13%);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 575.98px) {
+  .preview-section .description-container p {
+    max-width: 80%;
+  }
+  .preview-section .decoration-star {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .preview-section .decoration-star.top {
+    -webkit-transform: translateY(57%) scale(0.5) translateX(-50%);
+            transform: translateY(57%) scale(0.5) translateX(-50%);
+  }
+  .preview-section .decoration-star.bottom {
+    -webkit-transform: translateY(25%) scale(0.5) translateX(55%);
+            transform: translateY(25%) scale(0.5) translateX(55%);
+  }
+}
+
+@media screen and (max-width: 991.98px) {
   .preview-section .description-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -586,13 +606,7 @@
   }
 }
 
-@media screen and (max-width: 575px) {
-  .preview-section .description-container p {
-    max-width: 80%;
-  }
-}
-
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .preview-section .decoration-star.top {
     -webkit-transform: translateY(67%) scale(0.7) translateX(-25%);
             transform: translateY(67%) scale(0.7) translateX(-25%);
@@ -600,23 +614,6 @@
   .preview-section .decoration-star.bottom {
     -webkit-transform: translateY(26%) scale(0.7) translateX(30%);
             transform: translateY(26%) scale(0.7) translateX(30%);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .preview-section .decoration-star.top {
-    -webkit-transform: translateY(57%) scale(0.5) translateX(-50%);
-            transform: translateY(57%) scale(0.5) translateX(-50%);
-  }
-  .preview-section .decoration-star.bottom {
-    -webkit-transform: translateY(25%) scale(0.5) translateX(55%);
-            transform: translateY(25%) scale(0.5) translateX(55%);
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .preview-section .decoration-star {
-    display: none;
   }
 }
 
@@ -710,20 +707,20 @@
   width: 30%;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.98px) {
   #contact .ghost-text {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   #contact .contact-form .outlined-button {
     width: 45%;
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 575.98px) {
   #contact {
     padding-block: 5rem;
   }

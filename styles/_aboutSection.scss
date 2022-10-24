@@ -29,8 +29,7 @@
     z-index: 1;
   }
 }
-
-@media screen and (max-width: 992px) {
+@include media-breakpoint-down(lg) {
   #about {
     .about-text-container {
       padding-right: 0;
