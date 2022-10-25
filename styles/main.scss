@@ -9,6 +9,26 @@
 @import "mapSection";
 @import "footer";
 
+::-webkit-scrollbar {
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #444;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+
+  &:hover {
+    background: #666;
+  }
+}
+
+:root {
+  scrollbar-color: #888 #444;
+}
+
 body {
   min-height: 100vh;
   font-family: "SF Pro Display", sans-serif;
