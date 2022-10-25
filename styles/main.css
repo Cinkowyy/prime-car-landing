@@ -729,6 +729,15 @@
   }
 }
 
+.map {
+  height: clamp(15.625rem, calc(12.9167rem + 12.037vw), 23.75rem);
+  overflow: hidden;
+  background-image: url("../images/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 body {
   min-height: 100vh;
   font-family: "SF Pro Display", sans-serif;
